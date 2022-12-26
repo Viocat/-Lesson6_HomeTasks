@@ -39,7 +39,7 @@ function padString(string, newLength, symbole, symboleLocation){
         result+='error string data\n';
     } if(isNaN(length)||length===null||length.trim()===''){
         result+='error length of new string data\n';
-    } if(symbl===null||symbl.trim()===''||symbl.length>1){
+    } if(symbl.length>1){
         result+='error symbol data';
     }
 
