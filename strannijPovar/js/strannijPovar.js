@@ -14,12 +14,9 @@
 
 // Вам необходимо написать функцию которая будет проводить расчеты стоимости покупки нужного количества картошки.
 
-// 0.75*4 = 1
-
-// цена = 0,75*4*13 
 
 const priceForKilo=13;
-const onePotatoWeight=0.75;
+const onePotatoWeight=0.075;
 let litersOfBorsh=48;
 let totalPrice=priceCount(priceForKilo,onePotatoWeight,litersOfBorsh);
 console.log('Цена картошки на 48 литров борща =' + totalPrice +'грн.');
