@@ -17,17 +17,13 @@
 
 const priceForKilo=13;
 const onePotatoWeight=0.075;
-let litersOfBorsh=48;
+const litersOfBorsh=48;
+
 let totalPrice=priceCount(priceForKilo,onePotatoWeight,litersOfBorsh);
 console.log('Цена картошки на 48 литров борща =' + totalPrice +'грн.');
 
 function priceCount(priceForKilo,onePotatoWeight,litersOfBorsh){
-const onePotato=onePotatoWeight;
-const oneKgPrice=priceForKilo;
-const liters=litersOfBorsh;
-const potatoForLiter=onePotato*4;
-
-let potatoTotalPrice=Math.ceil(potatoForLiter*liters)*oneKgPrice;
-
-return potatoTotalPrice;
+    const potatoForLiter=onePotatoWeight*4;
+    let potatoTotalPrice=Math.ceil(potatoForLiter*litersOfBorsh)*priceForKilo;
+    return potatoTotalPrice;
 }
