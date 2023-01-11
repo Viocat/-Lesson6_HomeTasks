@@ -25,6 +25,7 @@ function padString(string, newLength, symbole, symboleLocation = true) {
     if (typeof string !== 'string' || !string || string.trim().length < 1) return 'str error';
     if (typeof newLength !== 'number') return 'new str length error';
     if (!symbole || symbole.toString().trim().length > 1) return 'symbole error';
+    //toString для symbole -  из соображений что пользователь олень и передаёт символы не обязательно в виде строки
 
     let str = string;
     let symbl = symbole.toString();
